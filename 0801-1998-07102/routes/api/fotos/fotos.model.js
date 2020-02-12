@@ -48,7 +48,7 @@ userModel.getById = (id)=>{
 
 
 
-userModel.addNew = ( {fotostitle,fotosalbum,fotosurl,fotosthumbnail} )=>{
+userModel.addNew = ( {fotostitle1,fotosalbum1,fotosurl1,fotosthumbnail1} )=>{
     var newUser = Object.assign(
     {},
     userTemplate,

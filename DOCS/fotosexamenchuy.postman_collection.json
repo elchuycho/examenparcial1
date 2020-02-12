@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "3c5c2247-f893-4049-89ce-e519c08208f3",
+		"name": "fotosexamenchuy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/fotos/users/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fotostitle1",
+							"value": "titlw nuevon",
+							"type": "text"
+						},
+						{
+							"key": "fotosalbum1",
+							"value": "album nuevo",
+							"type": "text"
+						},
+						{
+							"key": "fotosurl1",
+							"value": "url nuevo",
+							"type": "text"
+						},
+						{
+							"key": "fotosthumbnail1",
+							"value": "thumbnail nuevo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/fotos/users/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fotos",
+						"users",
+						"all"
+					]
+				},
+				"description": "metodo get"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/fotos/users/new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fotostitle1",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fotosalbum1",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fotosurl1",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "fotosthumbnail1",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/fotos/users/new",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fotos",
+						"users",
+						"new"
+					]
+				},
+				"description": "agregar nueva imagen post"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/fotos/users/upd/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fotosurl1",
+							"value": "modi1.com",
+							"type": "text"
+						},
+						{
+							"key": "fotosthumbnail1",
+							"value": "modi2.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/fotos/users/upd/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fotos",
+						"users",
+						"upd",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "modificar urls con metodo put update"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/fotos/users/del/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/fotos/users/del/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fotos",
+						"users",
+						"del",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "metodo delete eliminar imagen"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
