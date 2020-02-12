@@ -99,7 +99,17 @@ userModel.update = (id, { fotosurl1, fotosthumbnail1 })=>{
 
 
 
-
+userModel.deleteByCode = (id)=>{
+  var newCollection = [];
+  newCollection = userCollection.filter(
+    (o)=>{
+      return o.fotosid !== id;
+    }
+  );
+  userCollection = newCollection;
+  writeToFile();
+  return true;
+}
 
 
 
