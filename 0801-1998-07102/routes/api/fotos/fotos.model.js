@@ -47,6 +47,33 @@ userModel.getById = (id)=>{
 }
 
 
+
+userModel.addNew = ( {fotostitle,fotosalbum,fotosurl,fotosthumbnail} )=>{
+    var newUser = Object.assign(
+    {},
+    userTemplate,
+    {
+        fotostitle:fotostitle1,
+        fotosalbum:fotosalbum1,
+        fotosurl:fotosurl1,
+        fotosthumbnail:fotosthumbnail1
+    }
+  );
+    newUser.fotosid = userCollection.length + 1;
+
+    userCollection.push(newUser);
+    writeToFile();
+    return newUser;
+}
+
+
+
+
+
+
+
+
+
 //prueba estatico
 userCollection.push(
     Object.assign(
